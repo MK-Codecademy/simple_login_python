@@ -3,7 +3,9 @@ from forms import SignUpForm
 from flask import render_template, redirect, url_for, request
 from models import User
 
+#This is the url without any route parameters
 @app.route('/')
+#This function only returns the index.html page see templates for page details
 def index():
     return render_template('index.html')
 
